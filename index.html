@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé - Introduction à la Sociologie (Saïd Belguidoum)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
+            color: #1a2a3a;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 30px;
+        }
+        h1 {
+            color: #1e3c72;
+            text-align: center;
+            border-bottom: 4px solid #e74c3c;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 1.9em;
+        }
+        .sous-titre {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        /* Onglets */
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+        }
+        .tab-btn {
+            background: #e8f0f8;
+            border: none;
+            padding: 12px 22px;
+            font-size: 0.9em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 12px 12px 0 0;
+            transition: 0.3s;
+            color: #1e3c72;
+        }
+        .tab-btn:hover {
+            background: #d4e4f0;
+        }
+        .tab-btn.active {
+            background: #e74c3c;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            animation: fade 0.4s ease;
+            padding: 10px 0;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fade {
+            from { opacity: 0; transform: translateY(8px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        /* Sections internes */
+        .section {
+            background: #fafcfd;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            border-radius: 16px;
+            border-left: 6px solid #3498db;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        .section h3 {
+            color: #e74c3c;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        .fr {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .ar {
+            color: #27ae60;
+            font-family: 'Traditional Arabic', 'Amiri', 'Segoe UI', serif;
+            direction: rtl;
+            font-size: 1.05em;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .liste {
+            margin: 10px 0 10px 25px;
+        }
+        .liste li {
+            margin: 6px 0;
+        }
+        .badge {
+            background: #f39c12;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-size: 0.7em;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #34495e;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 1px solid #ddd;
+            font-size: 0.75em;
+            color: #7f8c8d;
+        }
+        @media (max-width: 700px) {
+            .tab-btn { padding: 6px 10px; font-size: 0.7em;}
+            .container { padding: 15px;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📘 INTRODUCTION À LA SOCIOLOGIE – Saïd Belguidoum</h1>
+    <div class="sous-titre">Université d'Aix-Marseille – Département Carrières sociales (1990) | Résumé avec traduction arabe</div>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="chap1">📖 Ch.1 – Épistémologie</button>
+        <button class="tab-btn" data-tab="chap2">🏭 Ch.2 – Naissance de la sociologie</button>
+        <button class="tab-btn" data-tab="chap3">⚙️ Ch.3 – Paradigmes & courants</button>
+        <button class="tab-btn" data-tab="tableau">📊 Tableau récapitulatif</button>
+    </div>
+
+    <!-- ================= CHAPITRE 1 ================= -->
+    <div id="chap1" class="tab-content active">
+        <h2 style="color:#1e3c72;">📖 CHAPITRE 1 : ÉLÉMENTS D’ÉPISTÉMOLOGIE</h2>
+        
+        <div class="section">
+            <h3>1. Définition de l'épistémologie</h3>
+            <div class="fr">L'épistémologie est l'étude critique des principes, des hypothèses et des résultats des sciences. C'est une pratique de vigilance qui permet d'éviter les obstacles épistémologiques.</div>
+            <div class="ar">الإبستمولوجيا هي الدراسة النقدية لمبادئ وفرضيات ونتائج العلوم. هي ممارسة يقظة تسمح بتجنب العوائق الإبستمولوجية.</div>
+        </div>
+
+        <div class="section">
+            <h3>2. La pensée scientifique</h3>
+            <div class="fr">La science est l'ensemble des pratiques qui produisent des connaissances vraies. Elle n'est pas une simple description, elle est une explication.</div>
+            <div class="ar">العلم هو مجموعة الممارسات التي تنتج معارف حقيقية. ليس مجرد وصف، بل هو تفسير.</div>
+        </div>
+
+        <div class="section">
+            <h3>3. Les trois invariants de la pratique scientifique</h3>
+            <div class="fr"><strong>L'objet :</strong> un groupe de phénomènes isolables tirés de la nature ou des comportements humains.</div>
+            <div class="ar"><strong>الموضوع:</strong> مجموعة من الظواهر القابلة للعزل مستمدة من الطبيعة أو السلوكيات البشرية.</div>
+            <div class="fr"><strong>La méthode :</strong> la démarche suivie pour rendre l'objet intelligible (déductive, inductive).</div>
+            <div class="ar"><strong>المنهج:</strong> المسار المتبع لجعل الموضوع مفهوماً (استنباطي، استقرائي).</div>
+            <div class="fr"><strong>La théorie :</strong> un corps de concepts organisés qui rend compte de l'objet d'étude.</div>
+            <div class="ar"><strong>النظرية:</strong> مجموعة من المفاهيم المنظمة التي تشرح موضوع الدراسة.</div>
+        </div>
+
+        <div class="section">
+            <h3>4. Les obstacles épistémologiques</h3>
+            <div class="fr"><strong>L'empirisme :</strong> croire que la vérité est dans les faits bruts, sans transformation.</div>
+            <div class="ar"><strong>التجريبية:</strong> الاعتقاد أن الحقيقة في الوقائع الخام دون تحويل.</div>
+            <div class="fr"><strong>Le formalisme :</strong> croire que la théorie suffit à elle seule, sans vérification sur le terrain.</div>
+            <div class="ar"><strong>الشكلانية:</strong> الاعتقاد أن النظرية كافية بذاتها دون تحقق ميداني.</div>
+        </div>
+
+        <div class="section">
+            <h3>5. La coupure épistémologique</h3>
+            <div class="fr">C'est la rupture qualitative entre l'idéologie et la science. C'est le moment où une discipline dépasse ses obstacles et devient véritablement scientifique.</div>
+            <div class="ar">القطيعة الإبستمولوجية: هي الانقطاع النوعي بين الأيديولوجيا والعلم. هي اللحظة التي يتجاوز فيها تخصص ما عوائقه ويصبح علمياً حقاً.</div>
+        </div>
+    </div>
+
+    <!-- ================= CHAPITRE 2 ================= -->
+    <div id="chap2" class="tab-content">
+        <h2 style="color:#1e3c72;">🏭 CHAPITRE 2 : LA NAISSANCE DE LA SOCIOLOGIE</h2>
+        
+        <div class="section">
+            <h3>1. Le contexte historique (19ème siècle)</h3>
+            <div class="fr">La sociologie naît des grands bouleversements du 19ème siècle : révolution industrielle, accumulation primitive, salariat, colonisations.</div>
+            <div class="ar">يولد علم الاجتماع من الاضطرابات الكبرى للقرن 19: الثورة الصناعية، التراكم الأولي، الأجر، الاستعمارات.</div>
+        </div>
+
+        <div class="section">
+            <h3>2. Les révolutions politiques</h3>
+            <div class="fr">Les révolutions bourgeoises (France 1789, Angleterre, Allemagne, Italie) permettent à la bourgeoisie d'accéder au pouvoir et de constituer les États-nations.</div>
+            <div class="ar">الثورات البرجوازية تسمح للبرجوازية بالوصول إلى السلطة وتشكيل الدول القومية.</div>
+        </div>
+
+        <div class="section">
+            <h3>3. Le cadre intellectuel</h3>
+            <div class="fr"><strong>Révolution copernicienne :</strong> Galilée et Copernic imposent une vision mécaniste du monde.</div>
+            <div class="ar"><strong>الثورة الكوبرنيكية:</strong> جاليليو وكوبرنيكوس يفرضان رؤية آلية للعالم.</div>
+            <div class="fr"><strong>Siècle des Lumières :</strong> triomphe de la Raison, de l'Individu et du Progrès.</div>
+            <div class="ar"><strong>عصر الأنوار:</strong> انتصار العقل والفرد والتقدم.</div>
+            <div class="fr"><strong>Principe d'individuation :</strong> l'individu se détache de son groupe, devient objet de science.</div>
+            <div class="ar"><strong>مبدأ التفرد:</strong> الفرد ينفصل عن مجموعته، يصبح موضوعاً للعلم.</div>
+            <div class="fr"><strong>Principe de rationalité :</strong> le calcul et l'efficacité président à l'action économique.</div>
+            <div class="ar"><strong>مبدأ العقلانية:</strong> الحساب والفعالية يوجهان العمل الاقتصادي.</div>
+        </div>
+
+        <div class="section">
+            <h3>4. Auguste Comte (1798-1857)</h3>
+            <div class="fr">Il invente le mot « sociologie » en 1839. Il fonde le positivisme et la loi des trois états (théologique, métaphysique, positif). Père symbolique de la sociologie.</div>
+            <div class="ar">اخترع كلمة "علم الاجتماع" سنة 1839. أسس الوضعية وقانون المراحل الثلاث (اللاهوتية، الميتافيزيقية، الوضعية). هو الأب الرمزي لعلم الاجتماع.</div>
+        </div>
+
+        <div class="section">
+            <h3>5. Les précurseurs</h3>
+            <div class="fr">Platon, Aristote, Ibn Khaldoun (théorie des cycles sociaux), Hobbes (l'homme est un loup pour l'homme), Rousseau (l'homme est bon par nature).</div>
+            <div class="ar">أفلاطون، أرسطو، ابن خلدون (نظرية الدورات الاجتماعية)، هوبز (الإنسان ذئب لأخيه الإنسان)، روسو (الإنسان طيب بالفطرة).</div>
+        </div>
+    </div>
+
+    <!-- ================= CHAPITRE 3 ================= -->
+    <div id="chap3" class="tab-content">
+        <h2 style="color:#1e3c72;">⚙️ CHAPITRE 3 : LES GRANDS PARADIGMES DE LA SOCIOLOGIE</h2>
+        
+        <div class="section">
+            <h3>1. Trois axiomes de base</h3>
+            <div class="fr"><strong>Axiome 1 :</strong> L'homme est social par essence.</div>
+            <div class="ar">بديهية 1: الإنسان اجتماعي بالفطرة.</div>
+            <div class="fr"><strong>Axiome 2 :</strong> La société est un tout différent de la somme des individus.</div>
+            <div class="ar">بديهية 2: المجتمع كل يختلف عن مجموع الأفراد.</div>
+            <div class="fr"><strong>Axiome 3 :</strong> Les faits sociaux sont extérieurs à l'individu et contraignants (Durkheim).</div>
+            <div class="ar">بديهية 3: الوقائع الاجتماعية خارجية عن الفرد وإكراهية (دوركايم).</div>
+        </div>
+
+        <div class="section">
+            <h3>2. Procédure d'objectivation</h3>
+            <div class="fr">Le sociologue doit opérer une rupture avec le sens commun, considérer les faits sociaux comme des choses, utiliser problématisation, hypothèses, enquêtes.</div>
+            <div class="ar">يجب على عالم الاجتماع أن يقطع مع الفكر العادي، أن يعتبر الوقائع الاجتماعية كأشياء، يستخدم إشكالية، فرضيات، تحريات.</div>
+        </div>
+
+        <div class="section">
+            <h3>3. Spécificité des sciences sociales</h3>
+            <div class="fr">Le chercheur est à la fois sujet et objet de sa recherche. L'idéologie interfère inévitablement.</div>
+            <div class="ar">الباحث هو في نفس الوقت موضوع وذات لبحثه. الأيديولوجيا تتدخل حتماً.</div>
+        </div>
+
+        <div class="section">
+            <h3>4. Sociologie de l'équilibre / intégration</h3>
+            <div class="fr">Représentants : Comte, Durkheim, Parsons, Spencer. Vision : société équilibrée, intégrée ; les conflits sont des anomalies. Objectif : maintenir l'ordre.</div>
+            <div class="ar">الممثلون: كونت، دوركايم، بارسونز، سبنسر. الرؤية: المجتمع متوازن ومتكامل. الهدف: الحفاظ على النظام.</div>
+        </div>
+
+        <div class="section">
+            <h3>5. Sociologie du changement social</h3>
+            <div class="fr">Représentants : Marx, Proudhon, Touraine. Vision : société traversée par contradictions et conflits de classes. Objectif : analyser les transformations.</div>
+            <div class="ar">الممثلون: ماركس، برودون، تورين. الرؤية: المجتمع تخترقه تناقضات وصراعات. الهدف: تحليل التحولات.</div>
+        </div>
+
+        <div class="section">
+            <h3>6. Paradigme holistique</h3>
+            <div class="fr">Primat du social sur l'individu. Les structures sociales agissent les individus. (Marx, Durkheim).</div>
+            <div class="ar">أولوية الاجتماعي على الفرد. البنى الاجتماعية تفعل الأفراد. (ماركس، دوركايم).</div>
+        </div>
+
+        <div class="section">
+            <h3>7. Paradigme atomistique</h3>
+            <div class="fr">L'individu est l'atome premier. On cherche le sens que les acteurs donnent à leurs actions. (Weber, Pareto).</div>
+            <div class="ar">الفرد هو الذرة الأولى. نبحث عن المعنى الذي يعطيه الفاعلون لأفعالهم. (فيبر، باريتو).</div>
+        </div>
+
+        <div class="section">
+            <h3>8. Branches de la sociologie</h3>
+            <div class="fr">Sociologie rurale, urbaine, du travail, de la culture, de la politique, de la communication, de la famille, de l'éducation, de la religion.</div>
+            <div class="ar">علم الاجتماع الريفي، الحضري، العمل، الثقافة، السياسة، التواصل، الأسرة، التربية، الدين.</div>
+        </div>
+    </div>
+
+    <!-- ================= TABLEAU RÉCAPITULATIF ================= -->
+    <div id="tableau" class="tab-content">
+        <h2 style="color:#1e3c72;">📊 TABLEAU RÉCAPITULATIF FINAL</h2>
+        <div class="section">
+            <table>
+                <thead>
+                    <tr><th>Concept (Français)</th><th>Définition</th><th>المفهوم (العربية)</th><th>التعريف</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Épistémologie</td><td>Étude critique des principes et méthodes des sciences</td><td>إبستمولوجيا</td><td>دراسة نقدية لمبادئ ومناهج العلوم</td></tr>
+                    <tr><td>Positivisme</td><td>Étudier la société comme la nature (Comte)</td><td>وضعية</td><td>دراسة المجتمع مثل الطبيعة (كونت)</td></tr>
+                    <tr><td>Coupure épistémologique</td><td>Rupture entre idéologie et science</td><td>قطيعة إبستمولوجية</td><td>انقطاع بين الأيديولوجيا والعلم</td></tr>
+                    <tr><td>Paradigme holistique</td><td>Le social détermine l'individu</td><td>نموذج كلي</td><td>الاجتماعي يحدد الفرد</td></tr>
+                    <tr><td>Paradigme atomistique</td><td>L'individu est le point de départ</td><td>نموذج ذري</td><td>الفرد هو نقطة البداية</td></tr>
+                    <tr><td>Sociologie de l'équilibre</td><td>Ordre, intégration, stabilité</td><td>علم اجتماع التوازن</td><td>نظام، تكامل، استقرار</td></tr>
+                    <tr><td>Sociologie du changement</td><td>Conflit, contradiction, transformation</td><td>علم اجتماع التغيير</td><td>صراع، تناقض، تحول</td></tr>
+                </tbody>
+            </table>
+            <div class="fr" style="margin-top:20px;"><strong>Rappel :</strong> La sociologie naît au 19ème siècle avec les bouleversements industriels, politiques et intellectuels. Auguste Comte est le père symbolique. Durkheim et Marx ouvrent les deux grandes voies : intégration vs conflit.</div>
+            <div class="ar"><strong>تذكير:</strong> يولد علم الاجتماع في القرن 19 مع الاضطرابات الصناعية والسياسية والفكرية. أوغست كونت هو الأب الرمزي. دوركايم وماركس يفتحان الطريقين الكبيرين: التكامل مقابل الصراع.</div>
+        </div>
+    </div>
+
+    <footer>
+        Résumé du cours "Introduction à la Sociologie" – Saïd Belguidoum (1990) | IUT d’Aix-Marseille | Traduction bilingue français – arabe
+    </footer>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            buttons.forEach(b => b.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
